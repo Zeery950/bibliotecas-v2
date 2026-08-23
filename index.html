@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Solara Biblio | Biblioteca Virtual</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="index.html">
+    SOLARA<span>BIBLIO</span>
+  </a>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#biblioteca">Biblioteca</a>
+    <a href="#sagas">Sagas</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+
+  <div>
+    <small>Tu próxima historia empieza aquí</small>
+
+    <h1>Una biblioteca para perderse.</h1>
+
+    <p>
+      Explorá sagas, descubrí nuevos mundos y elegí
+      tu próxima historia.
+    </p>
+
+    <button onclick="document.querySelector('#biblioteca').scrollIntoView()">
+      Explorar biblioteca
+    </button>
+  </div>
+
+  <div class="magic-card"></div>
+
+</section>
+
+<main id="biblioteca">
+
+  <div class="section-title">
+    <div>
+      <h2>Explorá las historias</h2>
+
+      <p>
+        Elegí una saga para descubrir todos sus libros.
+      </p>
+    </div>
+  </div>
+
+  <input
+    class="search"
+    id="search"
+    placeholder="Buscar una saga..."
+  >
+
+  <section class="sagas-grid" id="sagas">
+
+    <a
+      href="sagas/harry-potter.html"
+      class="saga-card"
+      data-name="harry potter"
+    >
+
+      <div
+        class="saga-cover"
+        style="background-image:url('covers/harry-potter/1.jpg')"
+      ></div>
+
+      <div class="saga-text">
+        <small>COLECCIÓN</small>
+
+        <h2>Harry Potter</h2>
+
+        <p>
+          Los siete libros de una de las historias
+          más conocidas del mundo mágico.
+        </p>
+
+        <span>Explorar saga →</span>
+      </div>
+
+    </a>
+
+
+    <a
+      href="sagas/senor-anillos.html"
+      class="saga-card"
+      data-name="el señor de los anillos senor anillos"
+    >
+
+      <div
+        class="saga-cover"
+        style="background-image:url('covers/senor-anillos/1.jpg')"
+      ></div>
+
+      <div class="saga-text">
+        <small>TRILOGÍA</small>
+
+        <h2>El Señor de los Anillos</h2>
+
+        <p>
+          Una aventura épica a través de la Tierra Media.
+        </p>
+
+        <span>Explorar saga →</span>
+      </div>
+
+    </a>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <strong>SOLARA BIBLIO</strong>
+
+  <p>
+    Biblioteca virtual con fines educativos y de lectura.
+    Las obras, personajes, títulos y elementos relacionados
+    pertenecen a sus respectivos autores y titulares de derechos.
+  </p>
+
+  <p>
+    Solara Biblio no reclama la autoría ni los derechos de copyright
+    de las obras presentadas.
+  </p>
+
+  <small>
+    © Solara Biblio — Proyecto educativo
+  </small>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
