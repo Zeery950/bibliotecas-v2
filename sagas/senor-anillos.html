@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>El Señor de los Anillos | Solara Biblio</title>
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+
+<a class="logo" href="../index.html">
+SOLARA<span>BIBLIO</span>
+</a>
+
+<nav>
+<a href="../index.html">Inicio</a>
+<a href="../index.html#biblioteca">Biblioteca</a>
+</nav>
+
+</header>
+
+<main>
+
+<div class="section-title">
+
+<div>
+
+<p class="back">
+<a href="../index.html">← Volver a la biblioteca</a>
+</p>
+
+<h2>El Señor de los Anillos</h2>
+
+<p>
+La trilogía principal de la Tierra Media.
+</p>
+
+</div>
+
+</div>
+
+<section class="books-grid" id="books"></section>
+
+</main>
+
+<footer>
+
+<strong>SOLARA BIBLIO</strong>
+
+<p>
+Biblioteca virtual con fines educativos y de lectura.
+Las obras pertenecen a sus respectivos titulares de derechos.
+</p>
+
+<small>© Solara Biblio — Proyecto educativo</small>
+
+</footer>
+
+<script>
+
+const books=[
+"La Comunidad del Anillo",
+"Las Dos Torres",
+"El Retorno del Rey"
+];
+
+const container=document.querySelector("#books");
+
+books.forEach((title,index)=>{
+
+const n=index+1;
+
+container.innerHTML+=`
+
+<article class="book-card">
+
+<img
+src="../covers/senor-anillos/${n}.jpg"
+alt="${title}"
+>
+
+<h3>${title}</h3>
+
+<span>Libro ${n}</span>
+
+<a
+class="download-btn"
+href="../covers/senor-anillos/${n}.pdf"
+download
+>
+Descargar libro
+</a>
+
+</article>
+
+`;
+
+});
+
+</script>
+
+</body>
+</html>
